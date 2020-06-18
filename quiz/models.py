@@ -9,7 +9,6 @@ from django.core.validators import (
 )
 from django.utils.translation import ugettext_lazy as _
 from django.utils.timezone import now
-from django.utils.encoding import python_2_unicode_compatible
 from django.conf import settings
 
 from model_utils.managers import InheritanceManager
@@ -22,10 +21,9 @@ class CategoryManager(models.Manager):
                                    .lower())
 
         new_category.save()
-        return new_category
+        return new_category # this seems like it just makes it into a slug, which is now built-in.
 
 
-@python_2_unicode_compatible
 class Category(models.Model):
 
     category = models.CharField(
@@ -43,7 +41,6 @@ class Category(models.Model):
         return self.category
 
 
-@python_2_unicode_compatible
 class SubCategory(models.Model):
 
     sub_category = models.CharField(
@@ -64,7 +61,6 @@ class SubCategory(models.Model):
         return self.sub_category + " (" + self.category.category + ")"
 
 
-@python_2_unicode_compatible
 class Quiz(models.Model):
 
     title = models.CharField(
@@ -541,7 +537,6 @@ class Sitting(models.Model):
         return answered, total
 
 
-@python_2_unicode_compatible
 class Question(models.Model):
     """
     Base class for all question types.

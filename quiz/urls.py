@@ -1,7 +1,4 @@
-try:
-    from django.conf.urls import url
-except ImportError:
-    from django.urls import re_path as url
+from django.urls import path
 
 from .views import QuizListView, CategoriesListView, \
     ViewQuizListByCategory, QuizUserProgressView, QuizMarkingList, \
@@ -9,15 +6,15 @@ from .views import QuizListView, CategoriesListView, \
 
 urlpatterns = [
 
-    url(r'^$',
+    url('',
         view=QuizListView.as_view(),
         name='quiz_index'),
 
-    url(r'^category/$',
+    url('category/',
         view=CategoriesListView.as_view(),
         name='quiz_category_list_all'),
 
-    url(r'^category/(?P<category_name>[\w|\W-]+)/$',
+    url('category/<category_name:str>/',
         view=ViewQuizListByCategory.as_view(),
         name='quiz_category_list_matching'),
 
