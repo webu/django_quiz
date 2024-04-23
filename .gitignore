@@ -2,6 +2,9 @@
 *~
 *.pyc
 #*#
+python-env/
+upload/
+.eggs/
 /db.sqlite3
 sqlite.db
 /manage.py
