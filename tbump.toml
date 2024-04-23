@@ -34,6 +34,9 @@ tag_template = "{new_version}"
 [[file]]
 src = "quiz/__init__.py"
 
+[[file]]
+src = "setup.py"
+
 # You can specify a list of commands to
 # run after the files have been patched
 # and before the git commit is made
