@@ -5,7 +5,6 @@ import quiz.models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [("quiz", "0008_auto_20220106_1701")]
 
     operations = [

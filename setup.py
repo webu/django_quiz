@@ -6,7 +6,7 @@ readme = open("README.rst", encoding="utf-8").read()
 
 setup(
     name="django-quiz-app",
-    version="0.6.0-rc.2",
+    version="0.6.0-rc.3",
     packages=find_packages(),
     include_package_data=True,
     license="MIT License",

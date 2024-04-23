@@ -33,7 +33,6 @@ class CategoryManager(TranslatableManager):
 
 
 class Category(TranslatableModel):
-
     translations = TranslatedFields(
         category=models.CharField(
             verbose_name=_("Category"),
@@ -55,7 +54,6 @@ class Category(TranslatableModel):
 
 
 class SubCategory(TranslatableModel):
-
     translations = TranslatedFields(
         sub_category=models.CharField(
             verbose_name=_("Sub-Category"), max_length=250, blank=True, null=True
@@ -81,7 +79,6 @@ class SubCategory(TranslatableModel):
 
 
 class Quiz(TranslatableModel):
-
     translations = TranslatedFields(
         title=models.CharField(verbose_name=_("Title"), max_length=60, blank=False),
         description=models.TextField(

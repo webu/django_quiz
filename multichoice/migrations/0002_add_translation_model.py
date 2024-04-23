@@ -7,7 +7,6 @@ import parler.models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [("multichoice", "0001_initial")]
 
     operations = [

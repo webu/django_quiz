@@ -39,7 +39,6 @@ def backwards_func(apps, schema_editor):
 
 
 class Migration(migrations.Migration):
-
     dependencies = [("quiz", "0005_move_score_csv_to_json")]
 
     operations = [migrations.RunPython(forwards_func, backwards_func)]

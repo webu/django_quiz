@@ -8,7 +8,6 @@ import parler
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [("quiz", "__first__")]

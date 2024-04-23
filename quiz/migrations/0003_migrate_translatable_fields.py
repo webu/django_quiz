@@ -99,7 +99,6 @@ def _get_translation(object, MyModelTranslation):
 
 
 class Migration(migrations.Migration):
-
     dependencies = [("quiz", "0002_add_translation_model")]
 
     operations = [migrations.RunPython(forwards_func, backwards_func)]

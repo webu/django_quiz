@@ -4,7 +4,6 @@ from django.db import migrations
 
 
 class Migration(migrations.Migration):
-
     dependencies = [("quiz", "0007_remove_progress_score")]
 
     operations = [

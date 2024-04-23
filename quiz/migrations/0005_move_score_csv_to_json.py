@@ -5,7 +5,6 @@ import django_jsonfield_backport.models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [("quiz", "0004_remove_untranslated_fields")]
 
     operations = [

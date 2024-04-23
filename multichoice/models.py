@@ -15,7 +15,6 @@ ANSWER_ORDER_OPTIONS = (
 
 
 class MCQuestion(Question):
-
     # default_manager = TranslatableManager()
 
     answer_order = models.CharField(
